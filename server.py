@@ -24,5 +24,6 @@ for fn in (
     mcp.tool(fn)
 
 if __name__ == "__main__":
+    host = os.getenv("HOST", "0.0.0.0")
     port = int(os.getenv("PORT", "8000"))
-    mcp.run(transport="http", host="0.0.0.0", port=port, path="/mcp")
+    mcp.run(transport="http", host=host, port=port, path="/mcp")
