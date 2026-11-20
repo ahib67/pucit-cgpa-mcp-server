@@ -1,4 +1,3 @@
-from langchain_core.tools import tool
 
 COURSES: dict[int, list[tuple[str, str, float]]] = {
     1: [
